@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.enzhou.monitor</groupId>
+  <groupId>org.enzhou</groupId>
   <artifactId>webgrabber</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
@@ -40,6 +40,11 @@
     	<groupId>org.jsoup</groupId>
     	<artifactId>jsoup</artifactId>
     	<version>1.8.1</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.enzhou</groupId>
+    	<artifactId>emailservice</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
     </dependency>
   </dependencies>
 </project>

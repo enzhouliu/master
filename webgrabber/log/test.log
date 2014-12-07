@@ -1,0 +1,24 @@
+23:12:44.003 [main] INFO  Test - info...
+23:12:44.004 [main] WARN  Test - warn...
+23:12:44.004 [main] DEBUG Test - debug...
+23:12:44.004 [main] ERROR Test - error...
+23:12:44.005 [main] ERROR App - trace...
+23:36:54.015 [main] INFO  Grabber - BusinessSaver is not available, current status for {0} is {1}
+23:38:09.881 [main] INFO  Grabber - BusinessSaver is not available, current status for 1/27/2015 is EconomySaver
+22:37:06.172 [main] INFO  Grabber - C:\Dev\Java\master\webgrabber\target\classes\UnitedRewardContent
+22:37:08.309 [main] INFO  Grabber - BusinessSaver is not available, current status for 1/27/2015 is EconomySaver
+23:15:04.333 [main] INFO  Grabber - file:/C:/Dev/Java/master/webgrabber/target/classes/UnitedRewardContent
+23:15:06.143 [main] INFO  Grabber - BusinessSaver is not available, current status for 1/27/2015 is EconomySaver
+23:26:01.292 [main] INFO  Grabber - file:/C:/Dev/Java/master/webgrabber/target/classes/UnitedRewardContent
+23:26:29.946 [main] INFO  Grabber - file:/C:/Dev/Java/master/webgrabber/target/classes/UnitedRewardContent
+23:26:31.969 [main] INFO  Grabber - BusinessSaver is not available, current status for 1/27/2015 is EconomySaver
+23:31:57.541 [main] INFO  Grabber - file:/C:/Dev/Java/master/webgrabber/target/classes/UnitedRewardContent
+23:42:14.134 [main] INFO  Grabber - file:/C:/Dev/Java/master/webgrabber/target/classes/UnitedRewardContent
+23:42:16.834 [main] INFO  Grabber - BusinessSaver is not available, current status for 1/27/2015 is EconomySaver
+23:48:22.841 [main] INFO  Grabber - file:/C:/Dev/Java/master/webgrabber/target/classes/UnitedRewardContent
+23:48:53.472 [main] INFO  Grabber - file:/C:/Dev/Java/master/webgrabber/target/classes/UnitedRewardContent
+23:48:55.638 [main] INFO  Grabber - BusinessSaver is not available, current status for 1/27/2015 is EconomySaver
+23:49:59.232 [main] INFO  Grabber - file:/C:/Dev/Java/master/webgrabber/target/classes/UnitedRewardContent
+23:50:01.483 [main] INFO  Grabber - BusinessSaver is not available, current status for 1/27/2015 is EconomySaver
+23:50:25.719 [main] INFO  Grabber - file:/C:/Dev/Java/master/webgrabber/target/classes/UnitedRewardContent
+23:50:27.467 [main] INFO  Grabber - BusinessSaver is not available, current status for 1/27/2015 is EconomySaver

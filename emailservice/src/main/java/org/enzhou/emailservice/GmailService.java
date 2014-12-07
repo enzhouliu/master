@@ -13,6 +13,8 @@ import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
+import org.enzhou.emailservice.utils.MobileProvider;
+
 /**
  * Hello world!
  *
@@ -58,13 +60,25 @@ public class GmailService
 		return true;
 	}
 	
+	public boolean sendTextMessage(String number, MobileProvider provider, String subject, String text){
+		Message message = new MimeMessage(session);
+		try {
+			message.setFrom(new InternetAddress(username));
+			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(number + provider.toString()));
+			message.setSubject(subject);
+			message.setText(text);
+			Transport.send(message);
+		} catch (MessagingException e) {
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+	
 	
 	
     public static void main( String[] args ) throws AddressException, MessagingException, UnsupportedEncodingException
     {
-    	GmailService email = new GmailService("enzhouliu@gmail.com", "84212905a~pig");
-    	email.sendEmail("Enzhou Liu", "9177556028@tmomail.net", "reminder", "time to go!!");
-    	email.sendEmail("Enzhou Liu", "9177556028@tmomail.net", "reminder1", "time to go!!");
-    	email.sendEmail("Enzhou Liu", "9177556028@tmomail.net", "reminder2", "time to go!!");
+    	
     }
 }

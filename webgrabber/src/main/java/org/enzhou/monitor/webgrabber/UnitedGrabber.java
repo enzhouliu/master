@@ -12,9 +12,9 @@ import org.enzhou.monitor.webgrabber.parsersImpl.UnitedRewardParser;
 import org.enzhou.monitor.webgrabber.singleImpl.UnitedRewardRequest;
 
 
-public class Grabber {
+public class UnitedGrabber {
 	
-	private static final Logger log = LogManager.getLogger(Grabber.class.getSimpleName());
+	private static final Logger log = LogManager.getLogger(UnitedGrabber.class.getSimpleName());
 
 //	private static void setProxy(){
 //		System.setProperty("http.proxyHost", "127.0.0.1");
@@ -52,6 +52,8 @@ public class Grabber {
 			if(result == RewardType.BusinessSaver || result == RewardType.BothSaver){
 				GmailService email = new GmailService("enzhouliu@gmail.com", "84212905a~pig");
 				email.sendTextMessage("9177556028", MobileProvider.TMobile, "Flight available for " + targetDate + " now!", "Please go and book the ticket!!");
+				email.sendEmail("United Reminder", "enzhou.important@gmail.com", "Flight available for " + targetDate + " now!", "Please go and book the ticket!!");
+				log.info(String.format("BusinessSaver is available now!!!", targetDate.toString(), result.toString()));
 			}
 			else{
 				log.info(String.format("BusinessSaver is not available, current status for %s is %s", targetDate.toString(), result.toString()));
@@ -60,12 +62,11 @@ public class Grabber {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-			
 	}
 	
 	public static void main(String[] args) throws UnsupportedEncodingException{
-		Grabber grabber = new Grabber();
-		grabber.run("1/27/2015");
+		UnitedGrabber grabber = new UnitedGrabber();
+		grabber.run("1/24/2015");
 		
 	}
 

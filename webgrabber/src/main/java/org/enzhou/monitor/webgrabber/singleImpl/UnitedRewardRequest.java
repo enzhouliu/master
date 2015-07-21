@@ -19,12 +19,12 @@ import java.util.zip.GZIPInputStream;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.enzhou.monitor.webgrabber.Grabber;
+import org.enzhou.monitor.webgrabber.UnitedGrabber;
 import org.enzhou.monitor.webgrabber.single.SingleRequest;
 
 public class UnitedRewardRequest implements SingleRequest{
 
-	private static final Logger log = LogManager.getLogger(Grabber.class.getSimpleName());
+	private static final Logger log = LogManager.getLogger(UnitedGrabber.class.getSimpleName());
 	private final String host = "http://www.united.com";
 	private String targetDate = null;
 	

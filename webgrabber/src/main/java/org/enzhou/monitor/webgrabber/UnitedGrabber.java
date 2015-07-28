@@ -3,6 +3,7 @@ package org.enzhou.monitor.webgrabber;
 
 import java.io.UnsupportedEncodingException;
 import java.text.ParseException;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.enzhou.emailservice.GmailService;
@@ -31,7 +32,8 @@ public class UnitedGrabber {
 		//Grabber.setProxy();	
 		UnitedRewardRequest request = new UnitedRewardRequest(targetDate);
 		
-		String response = request.sendPostRequest();
+		String url = "/web/en-US/default.aspx";
+		String response = request.sendPostRequest(url);
 //		System.out.println(response);
 		
 //		ResponseParser<List<UnitedRewardAvailability>> parser = new UnitedRewardParser();

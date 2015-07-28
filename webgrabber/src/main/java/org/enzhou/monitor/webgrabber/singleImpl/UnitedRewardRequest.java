@@ -62,9 +62,7 @@ public class UnitedRewardRequest implements SingleRequest{
 	}
 	
 	@Override
-	public String sendPostRequest(){
-		
-		String url = "/web/en-US/default.aspx";
+	public String sendPostRequest(String url){
 		HttpURLConnection connection = null;
 		try {
 			String content = loadRequestContent("UnitedRewardContent");
@@ -180,7 +178,7 @@ public class UnitedRewardRequest implements SingleRequest{
 	}
 
 	@Override
-	public String sendGetRequest() {
+	public String sendGetRequest(String url) {
 		// TODO Auto-generated method stub
 		return null;
 	}
